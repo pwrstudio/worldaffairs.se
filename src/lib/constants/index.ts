@@ -1,0 +1,1 @@
+export const SANITY_ID = 'b1xbsyjh'

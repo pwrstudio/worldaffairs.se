@@ -19,6 +19,12 @@ html, body {
     font-size: var(--font-size-base);
 }
 
+@media (max-width: 800px) {
+    body {
+        line-height: 1.3em;
+    }  
+}
+
 h1 {
     font-size: var(--font-size-base);
 }

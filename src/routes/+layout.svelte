@@ -2,7 +2,6 @@
   //   ...
 </script>
 
-LAYOUT
 <!-- MAIN CONTENT SLOT -->
 <main>
   <slot />
@@ -10,6 +9,9 @@ LAYOUT
 
 <style lang="scss">
   main {
-    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
   }
 </style>

@@ -1,13 +1,12 @@
 <script lang="ts">
+  import type { About, Release } from "$lib/types/sanity"
+
   export let data: {
-    home: any
-    releases: any[]
+    about: About
+    releases: Release[]
   }
 
-  const { home, releases } = data
-
-  // console.log("home", home)
-  // console.log("releases", releases)
+  const { about, releases } = data
 </script>
 
 <div class="column">
@@ -31,23 +30,23 @@
   <div class="about">
     <!-- CEO -->
     <div class="about-section">
-      <div class="label">{home.contact.ceoLable}</div>
-      <div class="value">{home.contact.ceoName}</div>
+      <div class="label">{about.ceoLabel}</div>
+      <div class="value">{about.ceoName}</div>
     </div>
     <!-- CONTACT -->
     <div class="about-section">
-      <div class="label">{home.contact.contactLable}</div>
+      <div class="label">{about.contactLabel}</div>
       <div class="value">
-        <a href={`mailto:${home.contact.contactEmail}`}>
-          {home.contact.contactEmail}
+        <a href={`mailto:${about.contactEmail}`}>
+          {about.contactEmail}
         </a>
       </div>
       <div class="value">
         <a
-          href={`https://www.instagram.com/${home.contact.contactInstagram}`}
+          href={`https://www.instagram.com/${about.contactInstagram}`}
           target="_blank"
         >
-          @{home.contact.contactInstagram}
+          @{about.contactInstagram}
         </a>
       </div>
     </div>

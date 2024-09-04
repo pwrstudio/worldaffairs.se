@@ -10,10 +10,6 @@
 </script>
 
 <div class="column">
-  <!-- LOGO -->
-  <!-- <div class="logo">
-    <img src="/images/logo.png" alt="World Affairs AB" />
-  </div> -->
   <!-- TITLE -->
   <div class="title">
     <h1>World Affairs AB</h1>
@@ -56,12 +52,6 @@
 <style lang="scss">
   .column {
     text-align: center;
-    // .logo {
-    //   display: none;
-    //   img {
-    //     width: 120px;
-    //   }
-    // }
 
     .releases {
       margin-bottom: 1em;
